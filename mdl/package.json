@@ -1,0 +1,13 @@
+{
+  "name": "manga-dl-js",
+  "version": "1.0.0",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "start": "node index.js config.json"
+  },
+  "dependencies": {
+    "playwright": "^1.49.0",
+    "yaml": "^2.5.1"
+  }
+}

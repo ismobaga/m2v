@@ -1,0 +1,31 @@
+{
+  "seriesUrl": "https://manhuafast.net/manga/police-returners-reset-life/",
+  "outputDir": "./downloads",
+  "concurrency": 3,
+
+  "browser": {
+    "headless": true
+  },
+
+  "selectors": {
+    "chapterLinks": "#manga-chapters-holder > div.page-content-listing.single-page > div > ul > li > a",
+    "chapterHrefAttr": "href",
+
+    "pageImages": ".reading-content div > img",
+    "imageAttrCandidates": ["src", "data-src", "data-original", "data-lazy-src"]
+  },
+
+  "chapterOrder": {
+    "reverse": true
+  },
+
+  "wait": {
+    "chapterNetworkIdleMs": 1500,
+    "imagesMinCount": 3,
+    "imagesTimeoutMs": 30000
+  },
+
+  "headers": {
+    "userAgent": "manga-dl-js/1.0 (authorized use)"
+  }
+}
